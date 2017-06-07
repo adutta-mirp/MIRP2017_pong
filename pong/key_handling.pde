@@ -17,3 +17,17 @@ void keyReleased() {
   if (key == PAUSE)         pause = false;
   if (key == START)         start = false;
 }
+float radiusIncrement = 10;
+
+void detectKeys() {
+  println(ballRadius);
+  if (left_up)
+    ballX =ballX - radiusIncrement;
+  if (right_up) 
+    ballX=ballX + radiusIncrement;
+   if (left_down)
+   ballY = ballY - radiusIncrement;
+    if (right_down)
+    ballY = ballY  + radiusIncrement;
+   
+}
